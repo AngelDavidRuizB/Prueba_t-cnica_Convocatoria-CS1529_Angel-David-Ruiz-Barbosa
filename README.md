@@ -1,5 +1,5 @@
-# División Financiera - Universidad Nacional de Colombia
 
+<<<<<<< HEAD
 ## 📋 Descripción del Proyecto
 
 Este proyecto implementa la página web de la **División Financiera** de la Universidad Nacional de Colombia - Sede Bogotá, desarrollada como parte de la prueba técnica para la Convocatoria CS1529.
@@ -192,3 +192,5 @@ Universidad Nacional de Colombia - Convocatoria CS1529 de 2025
 
 **Fecha de entrega**: 20 de agosto de 2025  
 **Contacto técnico**: Ing. Cesar David Pineda Osorio - cdpinedao@unal.edu.co
+=======
+>>>>>>> b1c9838fe4db0ead9a700832bf719e60f389714b
