@@ -411,7 +411,7 @@ h4, h5, h6 {
 .carousel-container {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: stretch;
 }
 /* ============================================================================
   COMPONENTE TARJETA - ESPECIFICACIONES DETALLADAS
@@ -422,7 +422,7 @@ h4, h5, h6 {
   border-radius: 25px; 
   border: 1px solid rgba(255, 255, 255, 0.1); 
   flex: 1;
-  min-height: 280px;
+  min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -755,7 +755,7 @@ h4, h5, h6 {
   .function-card {
   padding: 2rem; 
   border-radius: 20px; 
-  min-height: auto; 
+  min-height: 320px; 
   }
   .function-card h3 {
   font-size: 22px; 
