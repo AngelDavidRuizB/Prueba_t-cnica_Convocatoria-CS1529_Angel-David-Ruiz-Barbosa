@@ -359,6 +359,11 @@ h4, h5, h6 {
   position: relative;
 }
 
+/* Asegurar que los elementos con dropdown tengan posicionamiento relativo */
+.nav-item-with-dropdown {
+  position: relative !important;
+}
+
 .sub-nav-menu > li > a {
   color: var(--color-blanco);
   text-decoration: none;
@@ -380,7 +385,7 @@ h4, h5, h6 {
 }
 
 /* ============================================================================
-   MENÚS DESPLEGABLES PERSONALIZADOS
+   MENÚS DESPLEGABLES PERSONALIZADOS - VERSIÓN MEJORADA
    ============================================================================ */
 .custom-dropdown {
   position: absolute;
@@ -400,8 +405,12 @@ h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: translateY(-10px);
   
-  /* Asegurar que esté por encima de todo */
+  /* Transición suave */
+  transition: all 0.3s ease;
+  
+  /* Asegurar posicionamiento absoluto siempre */
   position: absolute !important;
 }
 
@@ -410,6 +419,15 @@ h4, h5, h6 {
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
+  transform: translateY(0) !important;
+}
+
+/* Mantener menú visible cuando se hace hover sobre él */
+.custom-dropdown:hover {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
 }
 
 /* Ítems dentro del menú desplegable */
@@ -1007,29 +1025,39 @@ h4, h5, h6 {
     padding: 25px; /* Padding reducido en móvil */
   }
   
-  .sub-nav-menu {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px 25px;
-    width: 90%;
-    max-width: 400px;
-  }
-  
   /* Ajustes para menús desplegables en móvil */
   .custom-dropdown {
-    position: static;
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    border-radius: 15px;
-    display: none; /* Oculto por defecto en móvil */
-    pointer-events: auto !important;
+    position: absolute !important; /* Mantener posicionamiento absoluto */
+    top: calc(100% + 5px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(-10px) !important;
+    min-width: 180px !important;
+    max-width: 250px !important;
+    padding: 8px 0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15) !important;
+    
+    /* Estado inicial en móvil */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    
+    /* Transición en móvil */
+    transition: all 0.3s ease !important;
   }
   
   .nav-item-with-dropdown:hover .custom-dropdown {
-    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+  
+  .custom-dropdown:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateX(-50%) translateY(0) !important;
   }
   
   .contact-card {
