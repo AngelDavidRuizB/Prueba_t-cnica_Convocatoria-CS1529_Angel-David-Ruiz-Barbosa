@@ -1,0 +1,43 @@
+/* ============================================================================
+  RESET Y ESTILOS BASE
+  ============================================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family) !important;
+  color: var(--color-texto-principal);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, div, a, li, ul, ol,
+button, input, textarea, select,
+.btn, .nav, .dropdown-menu {
+  font-family: var(--font-family) !important;
+}
+.font-thin {
+  font-weight: 100;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

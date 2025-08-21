@@ -1,0 +1,126 @@
+/* ============================================================================
+  SUB-HEADER - FRANJA DE CONTEXTO
+  ============================================================================ */
+.sub-header {
+  background-color: #555555;
+  padding: 12px 0;
+  text-align: center;
+}
+.sub-header-content p {
+  color: var(--color-blanco);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ============================================================================
+  SECCIÓN HERO
+  ============================================================================ */
+.hero-section {
+  position: relative;
+}
+.hero-content {
+  background-color: var(--color-verde-principal);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.hero-content::before,
+.hero-content::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(10, 47, 37, 0.2);
+  border-radius: 50%;
+  z-index: 1;
+}
+.hero-content::before {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+  transform: rotate(45deg);
+}
+.hero-content::after {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  left: -80px;
+  transform: rotate(-30deg);
+}
+.hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-icon {
+  margin-bottom: 30px;
+}
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  color: var(--color-blanco);
+  line-height: 0.9;
+  margin: 0;
+}
+h1 {
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  font-weight: 700;
+}
+h3 {
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  font-weight: 400;
+}
+h4, h5, h6 {
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  font-weight: 400;
+}
+.hero-right {
+  padding-left: 20px;
+}
+.hero-description {
+  font-size: 18px;
+  color: var(--color-blanco);
+  line-height: 1.7;
+  margin: 0;
+}
+.hero-description strong {
+  font-weight: 700;
+}
+.hero-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 16px;
+  border-radius: 8px;
+}

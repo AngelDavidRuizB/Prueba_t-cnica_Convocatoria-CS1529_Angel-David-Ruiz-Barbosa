@@ -1,0 +1,12 @@
+/* ============================================================================
+  PALETA DE COLORES Y VARIABLES
+  ============================================================================ */
+:root {
+  --color-verde-oscuro: #0A2F25;
+  --color-verde-principal: #48B68A;
+  --color-gris-oscuro: #333333;
+  --color-gris-claro: #F2F2F2;
+  --color-blanco: #FFFFFF;
+  --color-texto-principal: #212529;
+  --font-family: 'Ancizar Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}

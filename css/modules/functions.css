@@ -1,0 +1,102 @@
+/* ============================================================================
+  SECCIÓN FUNCIONES - ESTÉTICA PROFESIONAL Y MODERNA
+  ============================================================================ */
+.functions-section {
+  background-color: #F2F2F2;
+  padding: 100px 0 80px;
+}
+.functions-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+.functions-left h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  color: var(--color-verde-oscuro);
+  margin: 0;
+  line-height: 1;
+}
+.functions-right p {
+  font-size: 18px;
+  color: var(--color-texto-principal);
+  margin: 0;
+  line-height: 1.6;
+}
+.functions-carousel {
+  width: 100%;
+}
+.carousel-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* ============================================================================
+  COMPONENTE TARJETA - ESPECIFICACIONES DETALLADAS
+  ============================================================================ */
+.function-card {
+  background-color: #0A2F25; 
+  padding: 2.5rem; 
+  border-radius: 25px; 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  flex: 1;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.function-card:hover {
+  transform: translateY(-8px);
+}
+.function-card h3 {
+  font-size: 32px;
+  font-weight: 700; 
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  color: #FFFFFF; 
+  margin-bottom: 1rem; 
+  line-height: 1.2;
+}
+.function-card p {
+  font-size: 20px;
+  color: #FFFFFF; 
+  line-height: 1.6; 
+  margin-bottom: 2rem; 
+  flex-grow: 1;
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  font-weight: 400; 
+}
+.function-card p strong,
+.function-card p b {
+  font-weight: 700; 
+}
+
+/* ============================================================================
+  BOTÓN "CONOCE MÁS" - ESTILO FANTASMA (GHOST BUTTON)
+  ============================================================================ */
+.btn-ghost {
+  background: transparent; 
+  border: 1px solid rgba(255, 255, 255, 0.8); 
+  color: #FFFFFF; 
+  padding: 12px 24px; 
+  border-radius: 50px; 
+  font-size: 14px;
+  font-weight: 600; 
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  align-self: flex-start; 
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-ghost:hover {
+  background-color: #FFFFFF; 
+  color: #0A2F25; 
+  border-color: #FFFFFF; 
+}

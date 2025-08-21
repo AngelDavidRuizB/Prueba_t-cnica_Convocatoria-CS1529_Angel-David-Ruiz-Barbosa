@@ -1,0 +1,63 @@
+/* ============================================================================
+  SECCIÓN RECURSOS ADICIONALES
+  ============================================================================ */
+.resources-section {
+  background-color: #0A2F25;
+  padding: 60px 0;
+  width: 100%;
+}
+.resources-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.resources-left h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  color: #96E0B7;
+  margin: 0;
+  line-height: 0.9;
+}
+.resources-right {
+  display: flex;
+  align-items: center;
+}
+.resources-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.resources-list li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.resources-list li::before {
+  content: '';
+  width: 20px;
+  height: 8px;
+  background: linear-gradient(-45deg, #96E0B7 0%, #96E0B7 50%, transparent 100%);
+  border-radius: 10px;
+  transform: rotate(-45deg);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.resources-list li a {
+  color: #96E0B7;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  transition: all 0.3s ease;
+  display: block;
+}
+.resources-list li a:hover {
+  filter: brightness(1.2);
+  text-decoration: underline;
+}
