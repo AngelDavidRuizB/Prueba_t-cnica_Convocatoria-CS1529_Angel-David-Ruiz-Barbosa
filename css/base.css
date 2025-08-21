@@ -569,36 +569,37 @@ h4, h5, h6 {
 }
 
 /* ============================================================================
-   SECCIÓN RECURSOS ADICIONALES - VERSIÓN AMPLIADA
+   SECCIÓN RECURSOS ADICIONALES - ESTÉTICA MINIMALISTA Y ELEGANTE
    ============================================================================ */
 .resources-section {
-  background-color: var(--color-verde-oscuro);
-  padding: 120px 0; /* Padding considerablemente aumentado de 60px a 120px */
+  background-color: #0A2F25; /* Verde muy oscuro, profundo y desaturado */
+  padding: 80px 0;
+  width: 100%;
 }
 
 .resources-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px; /* Gap aumentado de 60px a 80px */
-  align-items: center;
+  gap: 80px;
+  align-items: center; /* Alineación vertical centrada entre título y lista */
 }
 
 .resources-left h2 {
-  font-size: 3.5rem; /* Título más grande: de 2.5rem a 3.5rem */
-  font-weight: 700; /* Ancizar Sans Bold */
+  font-size: 4rem; /* Tamaño muy grande para presencia dominante */
+  font-weight: 800; /* Bold/Heavy - grueso y notablemente presente */
   font-family: 'Ancizar Sans', Arial, sans-serif !important;
-  color: var(--color-verde-principal);
+  color: #96E0B7; /* Verde claro/menta - contraste fuerte con fondo oscuro */
   margin: 0;
-  line-height: 1;
+  line-height: 0.9; /* Líneas compactas para forma cuadrada */
+  letter-spacing: -0.02em; /* Ligero ajuste de espaciado */
 }
 
 .resources-right {
   display: flex;
   align-items: center;
-  padding: 40px; /* Padding interno agregado para mayor presencia */
 }
 
 .resources-list {
@@ -609,23 +610,48 @@ h4, h5, h6 {
 }
 
 .resources-list li {
-  margin-bottom: 25px; /* Espaciado aumentado entre elementos de 15px a 25px */
+  margin-bottom: 40px; /* Espacio vertical considerable entre elementos */
+}
+
+.resources-list li:last-child {
+  margin-bottom: 0;
 }
 
 .resources-list li a {
-  color: #4ECDC4;
+  color: #96E0B7; /* Verde claro/menta consistente */
   text-decoration: none;
-  font-size: 22px; /* Tamaño de fuente aumentado de 18px a 22px */
-  font-weight: 500;
+  font-size: 18px; /* Tamaño estándar para cuerpo de texto */
+  font-weight: 400; /* Peso regular */
   font-family: 'Ancizar Sans', Arial, sans-serif !important;
-  transition: opacity 0.3s ease;
-  display: block;
-  padding: 12px 0; /* Padding agregado para mayor área de click */
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
 }
 
 .resources-list li a:hover {
-  opacity: 0.8;
+  color: #B4F0C7; /* Ligeramente más brillante en hover */
   text-decoration: underline;
+}
+
+/* ============================================================================
+   VIÑETA PERSONALIZADA - EFECTO GRADIENTE ROTADO
+   ============================================================================ */
+.custom-bullet {
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  margin-right: 12px; /* Separación del texto */
+  border-radius: 50px; /* Extremos completamente redondeados (forma de cápsula) */
+  transform: rotate(-45deg); /* Rotación diagonal */
+  background: linear-gradient(
+    135deg, /* Dirección diagonal coincidiendo con la rotación */
+    #96E0B7 0%, /* Verde claro/menta opaco en esquina superior derecha */
+    #96E0B7 40%, /* Mantiene opacidad parcial */
+    rgba(150, 224, 183, 0.6) 70%, /* Comienza desvanecimiento */
+    rgba(150, 224, 183, 0) 100% /* Totalmente transparente en esquina inferior izquierda */
+  );
+  flex-shrink: 0; /* Previene que se comprima */
 }
 
 /* ============================================================================
@@ -905,23 +931,46 @@ h4, h5, h6 {
     font-size: 13px;
   }
   
-  /* Sección recursos responsive - Mantener proporción ampliada */
+  /* Sección recursos responsive - Estética minimalista adaptativa */
   .resources-section {
-    padding: 80px 0; /* Padding reducido pero aún generoso en móvil */
+    padding: 60px 0; /* Padding reducido para móvil pero manteniendo amplitud */
   }
   
   .resources-content {
     grid-template-columns: 1fr;
-    gap: 50px; /* Gap aumentado para móvil */
+    gap: 40px; /* Gap reducido en móvil */
+    padding: 0 20px;
   }
   
   .resources-left h2 {
-    font-size: 2.8rem; /* Título grande pero adaptado para móvil */
+    font-size: 3rem; /* Título grande adaptado para móvil */
     text-align: center; /* Centrado en móvil */
+    line-height: 0.85; /* Líneas más compactas */
   }
   
   .resources-right {
-    padding: 30px; /* Padding reducido pero presente en móvil */
+    padding: 0; /* Sin padding extra en móvil */
+    justify-content: center;
+  }
+  
+  .resources-list {
+    text-align: center; /* Centrado en móvil para mejor legibilidad */
+  }
+  
+  .resources-list li {
+    margin-bottom: 30px; /* Espaciado ajustado para móvil */
+  }
+  
+  .resources-list li a {
+    font-size: 16px; /* Ligeramente más pequeño en móvil */
+    justify-content: center; /* Centrar contenido del enlace */
+  }
+  
+  .custom-bullet {
+    width: 14px; /* Ligeramente más pequeño en móvil */
+    height: 7px;
+    margin-right: 10px;
+  }
   }
   
   .resources-list li a {
