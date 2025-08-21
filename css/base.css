@@ -54,6 +54,120 @@ button, input, textarea, select,
   padding: 0 20px;
 }
 /* ============================================================================
+  HEADER SUPERIOR - BARRA DE NAVEGACIÓN PRINCIPAL
+  ============================================================================ */
+.main-navigation {
+  background-color: var(--color-gris-oscuro);
+  width: 100%;
+  padding: 0;
+  min-height: 60px;
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 20px;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+.nav-menu li {
+  position: relative;
+}
+.nav-menu li a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Ancizar Sans', Arial, sans-serif !important;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+}
+.nav-menu li a:hover {
+  opacity: 0.8;
+}
+.nav-menu li.has-dropdown:hover > a {
+  background-color: #666666;
+}
+.dropdown-arrow {
+  margin-left: 5px;
+  font-size: 10px;
+  color: #9ACD32;
+  transition: transform 0.3s ease;
+}
+.nav-menu li.has-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+/* ============================================================================
+  MENÚS DESPLEGABLES DE NAVEGACIÓN PRINCIPAL
+  ============================================================================ */
+.main-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #222222;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+}
+.nav-menu li.has-dropdown:hover .main-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.main-dropdown li {
+  margin: 0;
+  padding: 0;
+}
+.main-dropdown li a {
+  display: block;
+  padding: 8px 0;
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  transition: background-color 0.2s ease;
+}
+.main-dropdown li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
+}
+/* ============================================================================
+  SUB-HEADER - FRANJA DE CONTEXTO
+  ============================================================================ */
+.sub-header {
+  background-color: #555555;
+  padding: 12px 0;
+  text-align: center;
+}
+.sub-header-content p {
+  color: var(--color-blanco);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+/* ============================================================================
   SECCIÓN HERO
   ============================================================================ */
 .hero-section {
@@ -216,9 +330,9 @@ h4, h5, h6 {
   background-color: #E9EFF3 !important;
   border-radius: 8px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  min-width: 240px;
-  max-width: 336px;
-  padding: 10px 0;
+  min-width: 200px;
+  max-width: 280px;
+  padding: 8px 0;
   list-style: none;
   margin: 0;
   z-index: 99999;
@@ -238,14 +352,14 @@ h4, h5, h6 {
 }
 .custom-dropdown li a {
   display: block;
-  padding: 12px 24px;
+  padding: 10px 20px;
   color: var(--color-texto-principal);
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
   border-radius: 4px;
-  margin: 0 5px;
+  margin: 0 4px;
 }
 .custom-dropdown li a:hover {
   background-color: rgba(72, 182, 138, 0.15);
@@ -297,7 +411,7 @@ h4, h5, h6 {
 .carousel-container {
   display: flex;
   gap: 2rem;
-  align-items: stretch;
+  align-items: flex-start;
 }
 /* ============================================================================
   COMPONENTE TARJETA - ESPECIFICACIONES DETALLADAS
@@ -308,7 +422,7 @@ h4, h5, h6 {
   border-radius: 25px; 
   border: 1px solid rgba(255, 255, 255, 0.1); 
   flex: 1;
-  min-height: 380px;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -606,6 +720,12 @@ h4, h5, h6 {
   RESPONSIVE DESIGN
   ============================================================================ */
 @media (max-width: 768px) {
+  .main-navigation {
+    display: block !important;
+  }
+  .nav-container {
+    padding: 0 10px;
+  }
   .nav-menu {
   flex-direction: column;
   gap: 0;
@@ -613,6 +733,7 @@ h4, h5, h6 {
   .nav-menu li a {
   padding: 12px 20px;
   border-bottom: 1px solid #555;
+  font-size: 16px;
   }
   .hero-grid {
   grid-template-columns: 1fr;
@@ -634,7 +755,7 @@ h4, h5, h6 {
   .function-card {
   padding: 2rem; 
   border-radius: 20px; 
-  min-height: 320px; 
+  min-height: auto; 
   }
   .function-card h3 {
   font-size: 22px; 
@@ -742,6 +863,12 @@ h4, h5, h6 {
 .nav-item-with-dropdown .custom-dropdown {
   position: absolute !important;
   display: block !important;
+}
+.main-navigation {
+  position: relative;
+  z-index: 1000;
+  display: block !important;
+  visibility: visible !important;
 }
 #letrasdfa2 {
   color: #fff;
