@@ -1,5 +1,96 @@
 # División Financiera - Universidad Nacional de Colombia
 
+## 📋 Descripción del Proyecto
+
+Este proyecto implementa la página web de la **División Financiera** de la Universidad Nacional de Colombia - Sede Bogotá, desarrollada como parte de la prueba técnica para la Convocatoria CS1529.
+
+## 🎯 Características Principales
+
+### ✨ Diseño y Estética
+- **Diseño profesional y moderno** con paleta de colores institucional
+- **Tipografía Ancizar Sans** completamente implementada
+- **Layout responsivo** adaptativo para todos los dispositivos
+- **Componentes estéticamente optimizados** según especificaciones detalladas
+
+### 🚀 Funcionalidades Implementadas
+- **Navegación principal** con menús desplegables funcionales
+- **Sub-navegación** con dropdowns personalizados
+- **Sección Hero** con información institucional
+- **Sección de Funciones** con tarjetas profesionales
+- **Sección de Recursos** ampliada y destacada
+- **Footer completo** con información de contacto y enlaces
+
+### 🎨 Especificaciones Técnicas
+- **HTML5 semántico** con estructura optimizada
+- **CSS3 avanzado** con variables personalizadas y Grid/Flexbox
+- **JavaScript ES6+** para interactividad
+- **Bootstrap integrado** con personalización completa
+- **Diseño mobile-first** con breakpoints optimizados
+
+## 📂 Estructura del Proyecto
+
+```
+├── index.html              # Página principal
+├── css/
+│   ├── base.css            # Estilos principales personalizados
+│   ├── fonts.css           # Definiciones de fuentes Ancizar
+│   ├── unal.css            # Estilos institucionales UNAL
+│   └── ...                 # Otros archivos CSS del template
+├── js/
+│   ├── base.js             # JavaScript personalizado
+│   └── ...                 # Librerías y scripts adicionales
+├── fonts/                  # Fuentes Ancizar Sans completas
+├── images/                 # Recursos visuales
+└── README.md               # Este archivo
+
+```
+
+## 🎯 Implementaciones Destacadas
+
+### 1. Sistema de Navegación
+- **Menús desplegables** principales con hover effects
+- **Sub-navegación flotante** con dropdowns personalizados
+- **Navegación responsiva** para dispositivos móviles
+
+### 2. Sección de Funciones
+- **Tarjetas profesionales** con diseño bicolor
+- **Botones fantasma (ghost buttons)** con efectos de hover
+- **Layout de Grid flexible** para diferentes tamaños de pantalla
+
+### 3. Footer Avanzado
+- **Diseño bicolor** con tarjeta de contacto prominente
+- **Información estructurada** con iconos y jerarquía visual
+- **Enlaces de asistencia virtual** y directorio
+
+### 4. Optimizaciones Estéticas
+- **Paleta de colores institucional** (#0A2F25, #48B68A)
+- **Tipografía Ancizar Sans** en múltiples pesos
+- **Espaciado y padding** cuidadosamente calculados
+- **Efectos de hover** y transiciones suaves
+
+## 🔧 Tecnologías Utilizadas
+
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos avanzados con variables y Grid
+- **JavaScript** - Funcionalidad interactiva
+- **Bootstrap 4** - Framework base
+- **Font-face** - Implementación de Ancizar Sans
+- **SVG** - Iconografía vectorial
+
+## 👨‍💻 Desarrollado por
+
+**Angel David Ruiz Barbosa**
+- Prueba Técnica Convocatoria CS1529
+- Universidad Nacional de Colombia
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado específicamente para la Universidad Nacional de Colombia como parte del proceso de selección CS1529.
+
+---
+
+*Última actualización: Agosto 2025*
+
 ## Descripción del Proyecto
 
 Esta es la implementación de la página web para la División Financiera y Administrativa de la Sede Bogotá de la Universidad Nacional de Colombia, desarrollada como parte de la prueba técnica para Frontend Developer.
