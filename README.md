@@ -9,6 +9,21 @@ Cabe resaltar que opte por no hacer uso de ningun framework dado que a pesar de 
 En los presentes archivos, se replico en la mayor medida posible el diseño dado en Figma,a exepción de unas cuantas animaciones en la sección de Funciones y unos cuantos logos (Los cuales fueorn reemplazados), dado ciertos problemas al momento de compilar el código
 
 **Modularización**
-Dada la longitud de líneas de código y el número de secciones presentes en el diseño, opte por realizar una modularización del código css con el objetivo de mejorar la organización y estructuración del código.  Permitiendo de esta manera un desarrollo mas responsable y siguiendo las reglas estandares del clean code.
+Dada la longitud de líneas de código y el número de secciones presentes en el diseño, opte por realizar una modularización del código css con el objetivo de mejorar la organización y estructuración del código.  La cual se dio de la siguiente manera.
+
+css/
+├── base_modular.css (archivo principal de importación)
+├── base_original.css (respaldo del archivo original)
+├── modules/
+│   ├── variables.css (variables CSS globales)
+│   ├── base.css (reset y estilos base)
+│   ├── navigation.css (navegación principal y dropdowns)
+│   ├── dropdowns.css (menús desplegables personalizados)
+│   ├── hero.css (sección hero y sub-header)
+│   ├── functions.css (sección funciones y tarjetas)
+│   ├── resources.css (sección recursos adicionales)
+│   ├── footer.css (footer y componentes de contacto)
+│   └── responsive.css (media queries y utilidades)
+
 
 Finalmente, cabe mencionar que se hizo uso de diferentes herramientas de IA para la generación de las carpetas, identificación de tonos de color, generación de comentarios, generación de tests,etc.
