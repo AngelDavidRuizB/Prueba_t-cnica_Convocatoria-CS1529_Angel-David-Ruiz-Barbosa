@@ -1,0 +1,115 @@
+/* ============================================================================
+   FUENTES ANCIZAR SANS - UNIVERSIDAD NACIONAL DE COLOMBIA
+   ============================================================================ */
+
+/* Ancizar Sans Regular */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-regular-webfont.eot");
+    src: url("../fonts/ancizar_sans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-regular-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-regular-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-regular-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-regular-webfont.svg#ancizar_sans-regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Ancizar Sans Regular Italic */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-regular_italic-webfont.eot");
+    src: url("../fonts/ancizar_sans-regular_italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-regular_italic-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-regular_italic-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-regular_italic-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-regular_italic-webfont.svg#ancizar_sans-regular_italic") format("svg");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Ancizar Sans Light */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-light-webfont.eot");
+    src: url("../fonts/ancizar_sans-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-light-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-light-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-light-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-light-webfont.svg#ancizar_sans-light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Ancizar Sans Light Italic */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-light_italic-webfont.eot");
+    src: url("../fonts/ancizar_sans-light_italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-light_italic-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-light_italic-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-light_italic-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-light_italic-webfont.svg#ancizar_sans-light_italic") format("svg");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Ancizar Sans Bold */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-bold-webfont.eot");
+    src: url("../fonts/ancizar_sans-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-bold-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-bold-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-bold-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-bold-webfont.svg#ancizar_sans-bold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Ancizar Sans Bold Italic */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-bold_italic-webfont.eot");
+    src: url("../fonts/ancizar_sans-bold_italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-bold_italic-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-bold_italic-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-bold_italic-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-bold_italic-webfont.svg#ancizar_sans-bold_italic") format("svg");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Ancizar Sans Thin */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-thin-webfont.eot");
+    src: url("../fonts/ancizar_sans-thin-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-thin-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-thin-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-thin-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-thin-webfont.svg#ancizar_sans-thin") format("svg");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Ancizar Sans Black */
+@font-face {
+    font-family: "Ancizar Sans";
+    src: url("../fonts/ancizar_sans-black-webfont.eot");
+    src: url("../fonts/ancizar_sans-black-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ancizar_sans-black-webfont.woff2") format("woff2"),
+         url("../fonts/ancizar_sans-black-webfont.woff") format("woff"),
+         url("../fonts/ancizar_sans-black-webfont.ttf") format("truetype"),
+         url("../fonts/ancizar_sans-black-webfont.svg#ancizar_sans-black") format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
